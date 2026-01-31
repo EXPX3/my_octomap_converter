@@ -31,6 +31,7 @@ ament_target_dependencies(octomap_to_pcd
 target_link_libraries(octomap_to_pcd
   ${PCL_LIBRARIES}
   ${octomap_LIBRARIES}
+  octomath
 )
 
 
@@ -45,6 +46,7 @@ ament_target_dependencies(pcd_to_octomap
 target_link_libraries(pcd_to_octomap
   ${PCL_LIBRARIES}
   ${octomap_LIBRARIES}
+  octomath
 )
 
 # Install targets
